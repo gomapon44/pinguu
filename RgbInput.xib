@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RgbInput" customModule="pinguu" customModuleProvider="target">
+            <connections>
+                <outlet property="textLabel" destination="xp2-Wb-YXP" id="Ulf-Un-xkn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPx-Sv-TJY">
+                    <rect key="frame" x="10" y="10" width="210" height="70"/>
+                    <color key="backgroundColor" red="0.68235294120000001" green="0.70588235290000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="4ZM-P8-n59"/>
+                        <constraint firstAttribute="width" constant="210" id="N12-Bu-iDv"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123,456,789" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xp2-Wb-YXP">
+                    <rect key="frame" x="20" y="40" width="180" height="30"/>
+                    <color key="backgroundColor" red="0.68235294120000001" green="0.70588235290000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="16a-8V-ivD"/>
+                        <constraint firstAttribute="height" constant="30" id="xPK-Qa-JCK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                    <color key="textColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xV-pD-ieY">
+                    <rect key="frame" x="220" y="10" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.68235294120000001" green="0.70588235290000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="UPc-Dh-mxe"/>
+                        <constraint firstAttribute="height" constant="70" id="bkr-fY-eLO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                    <state key="normal" title="clear">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonClear:" destination="-1" eventType="touchUpInside" id="Tnk-fP-q7e"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHc-73-Yhh">
+                    <rect key="frame" x="10" y="80" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.87843137250000003" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="GC5-vA-Wlx"/>
+                        <constraint firstAttribute="height" constant="70" id="jXi-uu-kEU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                    <state key="normal" title="1">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="button1:" destination="-1" eventType="touchUpInside" id="ORg-nT-wyR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUU-uv-Vrt">
+                    <rect key="frame" x="80" y="80" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.87843137250000003" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="O9r-My-uB2"/>
+                        <constraint firstAttribute="width" constant="70" id="fPy-ie-xAo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                    <state key="normal" title="2">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="button2:" destination="-1" eventType="touchUpInside" id="oSV-Eo-gf9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdT-HG-0Gc">
+                    <rect key="frame" x="150" y="80" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.87843137250000003" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="7IH-wC-WRn"/>
+                        <constraint firstAttribute="width" constant="70" id="iPK-sI-hW8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                    <state key="normal" title="3">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="button3:" destination="-1" eventType="touchUpInside" id="wXb-Hp-qEA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBa-zk-5qE">
+                    <rect key="frame" x="220" y="80" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="hcx-8g-MGn"/>
+                        <constraint firstAttribute="height" constant="70" id="rp0-UZ-Cya"/>
+                    </constraints>
+                    <state key="normal" image="deleteRGB">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonBackSpace:" destination="-1" eventType="touchUpInside" id="DsE-Gf-fKQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMn-On-5bd">
+                    <rect key="frame" x="10" y="150" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.87843137250000003" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="8Ro-NZ-mkx"/>
+                        <constraint firstAttribute="height" constant="70" id="hFO-nG-0yN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                    <state key="normal" title="4">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="button4:" destination="-1" eventType="touchUpInside" id="bKy-0q-dDj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0e-eI-exQ">
+                    <rect key="frame" x="80" y="150" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.87843137250000003" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Drv-ve-EvF"/>
+                        <constraint firstAttribute="height" constant="70" id="Fge-CL-YRW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                    <state key="normal" title="5">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="button5:" destination="-1" eventType="touchUpInside" id="G84-69-tjv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yc-Vr-Mtc">
+                    <rect key="frame" x="150" y="150" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.87843137250000003" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="1d8-az-y55"/>
+                        <constraint firstAttribute="width" constant="70" id="8ls-4M-CSR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                    <state key="normal" title="6">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="button6:" destination="-1" eventType="touchUpInside" id="S12-d9-tQ9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUX-tC-JCj">
+                    <rect key="frame" x="220" y="150" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.68235294120000001" green="0.70588235290000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="jdp-7I-5fb"/>
+                        <constraint firstAttribute="height" constant="70" id="zjH-V3-fr4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                    <state key="normal" title="OK">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonOK:" destination="-1" eventType="touchUpInside" id="Jbz-1q-i9e"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gac-2H-Rdi">
+                    <rect key="frame" x="10" y="220" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.87843137250000003" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="FLg-dt-De7"/>
+                        <constraint firstAttribute="width" constant="70" id="Uss-8e-kIE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                    <state key="normal" title="7">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="button7:" destination="-1" eventType="touchUpInside" id="msS-YO-IKw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ym-hN-1BG">
+                    <rect key="frame" x="80" y="220" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.87843137250000003" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Yut-Ul-X4s"/>
+                        <constraint firstAttribute="height" constant="70" id="na0-qt-1ya"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                    <state key="normal" title="8">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="button8:" destination="-1" eventType="touchUpInside" id="iZD-Le-7fh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBk-hA-ZWc">
+                    <rect key="frame" x="150" y="220" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.87843137250000003" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="inu-Dd-keI"/>
+                        <constraint firstAttribute="width" constant="70" id="spH-Nm-Lio"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                    <state key="normal" title="9">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="button9:" destination="-1" eventType="touchUpInside" id="OBg-KO-ywU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfl-gp-5pq">
+                    <rect key="frame" x="220" y="220" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.87843137250000003" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="bkr-zB-wVR"/>
+                        <constraint firstAttribute="width" constant="70" id="sQ5-lM-rzG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                    <state key="normal" title="0">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="button0:" destination="-1" eventType="touchUpInside" id="7eT-3U-xI6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R,G,B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vok-fb-lHD">
+                    <rect key="frame" x="20" y="20" width="37" height="17"/>
+                    <color key="backgroundColor" red="0.68235294120000001" green="0.70588235290000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="37" id="B6Q-L0-Nkj"/>
+                        <constraint firstAttribute="height" constant="17" id="tHX-5f-Kmb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                    <color key="textColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EBk-hA-ZWc" firstAttribute="leading" secondItem="3Ym-hN-1BG" secondAttribute="trailing" id="0tQ-Kn-ewQ"/>
+                <constraint firstItem="xp2-Wb-YXP" firstAttribute="top" secondItem="aPx-Sv-TJY" secondAttribute="top" constant="30" id="301-27-5V9"/>
+                <constraint firstItem="Gac-2H-Rdi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="5QC-RD-n1H"/>
+                <constraint firstItem="3Ym-hN-1BG" firstAttribute="top" secondItem="B0e-eI-exQ" secondAttribute="bottom" id="61P-kP-IM9"/>
+                <constraint firstItem="5xV-pD-ieY" firstAttribute="leading" secondItem="aPx-Sv-TJY" secondAttribute="trailing" id="7u1-Jj-b9m"/>
+                <constraint firstItem="WUX-tC-JCj" firstAttribute="leading" secondItem="2yc-Vr-Mtc" secondAttribute="trailing" id="AKh-Gg-IdJ"/>
+                <constraint firstItem="3Ym-hN-1BG" firstAttribute="leading" secondItem="Gac-2H-Rdi" secondAttribute="trailing" id="AlA-9W-8Zb"/>
+                <constraint firstItem="Gac-2H-Rdi" firstAttribute="top" secondItem="GMn-On-5bd" secondAttribute="bottom" id="Dnx-UF-Df3"/>
+                <constraint firstItem="WUX-tC-JCj" firstAttribute="top" secondItem="SBa-zk-5qE" secondAttribute="bottom" id="G3T-cU-wtI"/>
+                <constraint firstItem="2yc-Vr-Mtc" firstAttribute="leading" secondItem="B0e-eI-exQ" secondAttribute="trailing" id="JMy-j2-9P0"/>
+                <constraint firstItem="EBk-hA-ZWc" firstAttribute="top" secondItem="2yc-Vr-Mtc" secondAttribute="bottom" id="Jbl-xk-gEr"/>
+                <constraint firstItem="GMn-On-5bd" firstAttribute="top" secondItem="UHc-73-Yhh" secondAttribute="bottom" id="LF6-CN-W18"/>
+                <constraint firstItem="5xV-pD-ieY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="NJR-I4-Ryn"/>
+                <constraint firstItem="Vok-fb-lHD" firstAttribute="leading" secondItem="aPx-Sv-TJY" secondAttribute="leading" constant="10" id="Qiq-vk-jE4"/>
+                <constraint firstItem="B0e-eI-exQ" firstAttribute="top" secondItem="VUU-uv-Vrt" secondAttribute="bottom" id="TGM-Rf-NsN"/>
+                <constraint firstItem="UdT-HG-0Gc" firstAttribute="top" secondItem="aPx-Sv-TJY" secondAttribute="bottom" id="V5d-OB-tem"/>
+                <constraint firstItem="UHc-73-Yhh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="WoH-Ne-xEj"/>
+                <constraint firstItem="aPx-Sv-TJY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="YK7-F3-LQc"/>
+                <constraint firstItem="SBa-zk-5qE" firstAttribute="top" secondItem="5xV-pD-ieY" secondAttribute="bottom" id="bAb-fg-YZq"/>
+                <constraint firstItem="Vok-fb-lHD" firstAttribute="top" secondItem="aPx-Sv-TJY" secondAttribute="top" constant="10" id="bl3-ve-vFv"/>
+                <constraint firstItem="GMn-On-5bd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="g42-JB-zsj"/>
+                <constraint firstItem="aPx-Sv-TJY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="hhx-AD-sj9"/>
+                <constraint firstItem="Sfl-gp-5pq" firstAttribute="leading" secondItem="EBk-hA-ZWc" secondAttribute="trailing" id="kan-sU-saj"/>
+                <constraint firstItem="xp2-Wb-YXP" firstAttribute="leading" secondItem="aPx-Sv-TJY" secondAttribute="leading" constant="10" id="n4G-Lj-I09"/>
+                <constraint firstItem="VUU-uv-Vrt" firstAttribute="leading" secondItem="UHc-73-Yhh" secondAttribute="trailing" id="pB2-mt-DGR"/>
+                <constraint firstItem="UdT-HG-0Gc" firstAttribute="leading" secondItem="VUU-uv-Vrt" secondAttribute="trailing" id="sOd-Pg-moc"/>
+                <constraint firstItem="Sfl-gp-5pq" firstAttribute="top" secondItem="WUX-tC-JCj" secondAttribute="bottom" id="t3X-ni-4Iw"/>
+                <constraint firstItem="B0e-eI-exQ" firstAttribute="leading" secondItem="GMn-On-5bd" secondAttribute="trailing" id="txy-WZ-zLE"/>
+                <constraint firstItem="VUU-uv-Vrt" firstAttribute="top" secondItem="aPx-Sv-TJY" secondAttribute="bottom" id="v80-6u-rZf"/>
+                <constraint firstItem="SBa-zk-5qE" firstAttribute="leading" secondItem="UdT-HG-0Gc" secondAttribute="trailing" id="xNy-Ej-jM9"/>
+                <constraint firstItem="UHc-73-Yhh" firstAttribute="top" secondItem="aPx-Sv-TJY" secondAttribute="bottom" id="yKt-37-75O"/>
+                <constraint firstItem="2yc-Vr-Mtc" firstAttribute="top" secondItem="UdT-HG-0Gc" secondAttribute="bottom" id="z58-tk-lmC"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-3" y="-50"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="deleteRGB" width="70" height="70"/>
+    </resources>
+</document>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Labels" customModule="pinguu" customModuleProvider="target">
+            <connections>
+                <outlet property="codeLabelButton" destination="0CQ-4x-WFb" id="H7j-EY-Bgo"/>
+                <outlet property="imageSizeButton" destination="1ME-9h-Lrc" id="obc-uT-oyM"/>
+                <outlet property="inputModeButton" destination="XgP-DM-f2c" id="nRF-sY-mhk"/>
+                <outlet property="outputModeButton" destination="OEI-MH-qKi" id="Myi-r1-kRH"/>
+                <outlet property="outputModeLabel" destination="M0Y-TN-dnw" id="fa1-3W-hoc"/>
+                <outlet property="saveButton" destination="A0c-cC-YVf" id="gyq-j3-eJY"/>
+                <outlet property="selectPatternButton" destination="SxA-uL-dci" id="RVV-0I-xIn"/>
+                <outlet property="titleTextField" destination="4nf-X6-Hhk" id="FHW-Ev-Me4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="185"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="NoTitle" textAlignment="natural" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4nf-X6-Hhk">
+                    <rect key="frame" x="5" y="77.5" width="290" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hmN-MY-hSG"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FileName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a86-61-E3B">
+                    <rect key="frame" x="5" y="65.5" width="43" height="12"/>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0c-cC-YVf">
+                    <rect key="frame" x="155" y="147.5" width="140" height="30"/>
+                    <color key="backgroundColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="9FO-aa-JJF"/>
+                        <constraint firstAttribute="width" constant="140" id="a6d-d7-3kt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                    <state key="normal" title="Save">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="saveButton:" destination="-1" eventType="touchUpInside" id="YrG-zB-6kG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxA-uL-dci" customClass="DesignableButton" customModule="pinguu" customModuleProvider="target">
+                    <rect key="frame" x="5" y="147.5" width="140" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="6XM-ol-GRF"/>
+                        <constraint firstAttribute="height" constant="30" id="EcW-Wa-nqm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                    <state key="normal" title="Select Pattern">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="selectPatternButton:" destination="-1" eventType="touchUpInside" id="j6Y-Yh-1rh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgP-DM-f2c" customClass="DesignableButton" customModule="pinguu" customModuleProvider="target">
+                    <rect key="frame" x="5" y="17.5" width="65" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="Z0u-2r-fkj"/>
+                        <constraint firstAttribute="height" constant="30" id="rSv-OB-I6I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                    <state key="normal" title="HEX">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputModeButton:" destination="-1" eventType="touchUpInside" id="bBC-zZ-Mst"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEI-MH-qKi" customClass="DesignableButton" customModule="pinguu" customModuleProvider="target">
+                    <rect key="frame" x="80" y="17.5" width="65" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="qcB-9V-Pmn"/>
+                        <constraint firstAttribute="height" constant="30" id="yuz-PU-eL7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                    <state key="normal" title="PNG">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="outputModeButton:" destination="-1" eventType="touchUpInside" id="piw-7w-hSW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ME-9h-Lrc" customClass="DesignableButton" customModule="pinguu" customModuleProvider="target">
+                    <rect key="frame" x="230" y="17.5" width="65" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="C3u-rL-1Nt"/>
+                        <constraint firstAttribute="height" constant="30" id="sZK-js-YMh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                    <state key="normal" title="M">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="imageSizeButton:" destination="-1" eventType="touchUpInside" id="Deg-b3-eIJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CQ-4x-WFb" customClass="DesignableButton" customModule="pinguu" customModuleProvider="target">
+                    <rect key="frame" x="155" y="17.5" width="65" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="D2E-mj-U8Z"/>
+                        <constraint firstAttribute="height" constant="30" id="N4M-Xu-dfr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                    <state key="normal" title="ON">
+                        <color key="titleColor" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.62352941179999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="codeLabelButton:" destination="-1" eventType="touchUpInside" id="Tjz-mR-Xlb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InputMode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mS-vz-0ye">
+                    <rect key="frame" x="5" y="5.5" width="49" height="12"/>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OutputMode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9A-rP-bEn">
+                    <rect key="frame" x="80" y="5.5" width="56" height="12"/>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CodeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="951-0i-STa">
+                    <rect key="frame" x="155" y="5.5" width="46" height="12"/>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ImageSize" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hn-Yv-d1t">
+                    <rect key="frame" x="230" y="5.5" width="46" height="12"/>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=".png" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0Y-TN-dnw">
+                    <rect key="frame" x="274" y="117.5" width="21" height="12"/>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4nf-X6-Hhk" firstAttribute="top" secondItem="XgP-DM-f2c" secondAttribute="bottom" constant="30" id="1B5-tC-dDJ"/>
+                <constraint firstItem="OEI-MH-qKi" firstAttribute="leading" secondItem="XgP-DM-f2c" secondAttribute="trailing" constant="10" id="3jU-8Z-Yci"/>
+                <constraint firstItem="2hn-Yv-d1t" firstAttribute="leading" secondItem="1ME-9h-Lrc" secondAttribute="leading" id="6NG-9n-6pf"/>
+                <constraint firstItem="OEI-MH-qKi" firstAttribute="bottom" secondItem="XgP-DM-f2c" secondAttribute="bottom" id="7m9-3P-Fjc"/>
+                <constraint firstItem="M0Y-TN-dnw" firstAttribute="top" secondItem="4nf-X6-Hhk" secondAttribute="bottom" id="88o-ph-u2O"/>
+                <constraint firstItem="4nf-X6-Hhk" firstAttribute="top" secondItem="a86-61-E3B" secondAttribute="bottom" id="8e9-pA-BmE"/>
+                <constraint firstItem="SxA-uL-dci" firstAttribute="top" secondItem="4nf-X6-Hhk" secondAttribute="bottom" constant="30" id="9iR-l7-gMc"/>
+                <constraint firstItem="0CQ-4x-WFb" firstAttribute="bottom" secondItem="OEI-MH-qKi" secondAttribute="bottom" id="F1h-HZ-167"/>
+                <constraint firstItem="1ME-9h-Lrc" firstAttribute="leading" secondItem="0CQ-4x-WFb" secondAttribute="trailing" constant="10" id="FpR-ep-DBX"/>
+                <constraint firstItem="A0c-cC-YVf" firstAttribute="top" secondItem="4nf-X6-Hhk" secondAttribute="bottom" constant="30" id="J2A-sm-ZxT"/>
+                <constraint firstItem="1ME-9h-Lrc" firstAttribute="top" secondItem="2hn-Yv-d1t" secondAttribute="bottom" id="MCv-ox-Te7"/>
+                <constraint firstItem="XgP-DM-f2c" firstAttribute="top" secondItem="6mS-vz-0ye" secondAttribute="bottom" id="Nte-VW-KdM"/>
+                <constraint firstItem="C9A-rP-bEn" firstAttribute="leading" secondItem="OEI-MH-qKi" secondAttribute="leading" id="PzC-10-YZJ"/>
+                <constraint firstItem="0CQ-4x-WFb" firstAttribute="top" secondItem="951-0i-STa" secondAttribute="bottom" id="XEX-7I-Bxr"/>
+                <constraint firstItem="1ME-9h-Lrc" firstAttribute="bottom" secondItem="0CQ-4x-WFb" secondAttribute="bottom" id="aPJ-t9-uNy"/>
+                <constraint firstItem="OEI-MH-qKi" firstAttribute="top" secondItem="C9A-rP-bEn" secondAttribute="bottom" id="aXJ-XM-F3i"/>
+                <constraint firstItem="M0Y-TN-dnw" firstAttribute="trailing" secondItem="4nf-X6-Hhk" secondAttribute="trailing" id="b0Q-Si-S8o"/>
+                <constraint firstAttribute="centerX" secondItem="OEI-MH-qKi" secondAttribute="trailing" constant="5" id="ear-Fa-RrA"/>
+                <constraint firstItem="4nf-X6-Hhk" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="iNB-5i-VyQ"/>
+                <constraint firstItem="4nf-X6-Hhk" firstAttribute="leading" secondItem="SxA-uL-dci" secondAttribute="leading" id="iqg-ZK-Bwe"/>
+                <constraint firstItem="4nf-X6-Hhk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mSR-qg-G4H"/>
+                <constraint firstItem="951-0i-STa" firstAttribute="leading" secondItem="0CQ-4x-WFb" secondAttribute="leading" id="mrL-NR-lCZ"/>
+                <constraint firstItem="A0c-cC-YVf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="5" id="sux-gJ-eoR"/>
+                <constraint firstItem="4nf-X6-Hhk" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="xHr-Ra-Oxk"/>
+                <constraint firstItem="6mS-vz-0ye" firstAttribute="leading" secondItem="XgP-DM-f2c" secondAttribute="leading" id="xoF-hO-atv"/>
+                <constraint firstItem="0CQ-4x-WFb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="5" id="ynm-t0-yfo"/>
+                <constraint firstItem="a86-61-E3B" firstAttribute="leading" secondItem="4nf-X6-Hhk" secondAttribute="leading" id="z5l-Gd-eYM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="centerX" secondItem="SxA-uL-dci" secondAttribute="trailing" constant="5" id="zqH-PF-bfX"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="140.95982142857142"/>
+        </view>
+    </objects>
+</document>
