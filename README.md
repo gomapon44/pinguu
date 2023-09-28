@@ -22,9 +22,7 @@
 + iPhoneとiPadで使えるユニバーサルアプリです。iPhoneは縦のみ、iPadは縦・横・SlideOver・SplitViewに対応しています。
 
 ## イメージ
-[![pinguu1](https://github.com/gomapon44/pinguu/assets/146205559/7920c64a-2b77-405e-84cd-cd5061658e1b)
-![pinguu2](https://github.com/gomapon44/pinguu/assets/146205559/b6876c86-5a87-4654-8547-6fb6b7c11a7e)
-<img width="1552" alt="story_board" src="https://github.com/gomapon44/pinguu/assets/146205559/53575235-58c7-4b32-b447-37b6430576b6">](https://github.com/gomapon44/pinguu/issues/1#issue-1917322704)
+https://github.com/gomapon44/pinguu/issues/1#issue-1917322704
 
 ## 備考
 + google admobのバナー広告が組み込まれています。（現在は有効期限が切れています。）
